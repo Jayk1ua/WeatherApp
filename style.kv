@@ -1,0 +1,40 @@
+<WeatherCard>:
+    padding: 4
+    size_hint: 0.8, 0.8
+    MDRelativeLayout:
+    
+        MDLabel:
+            id: label
+            text: "Weather"
+            adaptive_size: True
+            color: "grey"
+            pos: "12dp", "12dp"
+            bold: True
+
+
+<MainScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        pos_hint: {"center_x": .5}
+        size_hint: 1, 1
+        padding: "20sp"
+        spacing: "10sp"
+        MDBoxLayout:
+            orientation: 'horizontal'
+            spacing: '15sp'
+            size_hint: (1, None)
+            height: "40sp"
+
+            MDTextField:
+                hint_text: "Fill mode"
+                mode: "fill"
+            MDIconButton:
+                icon: "magnify"
+                md_bg_color: app.theme_cls.primary_color
+        WeatherCard:
+                
+
+
+            
+        
+        
